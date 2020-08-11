@@ -1,0 +1,15 @@
+ftp ftppassword
+密码
+内部
+svn
+svn username
+svn password
+svn username password
+sa
+sa password
+root password
+User ID=’sa’;Password
+sql
+smtp @url
+smtp password
+String password smtp
