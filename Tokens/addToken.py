@@ -25,9 +25,13 @@ def sent_data():
             token = to.strip("\n")
             data = {"value": token}
             burp_data = json.dumps(data)
-            response = requests.post(url=burp_url, headers=burp_header, data=burp_data)
-            if response:
-                print("[+]Add Token Success!")
+            try:
+                response = requests.post(url=burp_url, headers=burp_header, data=burp_data)
+                if response:
+                    print(burp_data)
+                    print("[+]Add Token Success!")
+            except EOFError:
+                print("[*]Time Out!")
 
 
 if __name__ == '__main__':

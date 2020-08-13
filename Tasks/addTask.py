@@ -39,6 +39,7 @@ def send_data():
                     response = requests.post(url=burp_url, headers=burp_header, data=burp_data)
                     # 打印请求状态
                     if response:
+                        print(burp_data)
                         print("[+]Add Task Success!")
                     response.close()
                 except EOFError:

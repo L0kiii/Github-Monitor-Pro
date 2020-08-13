@@ -28,7 +28,7 @@ with open(file="urls.txt", mode="r", encoding="utf-8") as f:
         n = n + 1
         line = line.strip()
         if line.startswith("###"):
-            value = line[4:] + str(n)
+            value = line[4:]
         else:
             namesDict[line] = value + str(n)
 """
